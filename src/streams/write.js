@@ -2,7 +2,7 @@ import "fs";
 import "readline";
 
 export const write = async () => {
-    const writableStream = fs.createWriteStream(filePath);
+    const writableStream = fs.createWriteStream("./files/fileToWrite.txt");
 
     writableStream.on('error',  (error) => {
         console.log(`An error occured while writing to the file. Error: ${error.message}`);
