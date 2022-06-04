@@ -1,5 +1,5 @@
-const fs = require('fs');
-const readline = require('readline');
+import "fs";
+import "readline";
 
 export const write = async () => {
     const writableStream = fs.createWriteStream(filePath);
